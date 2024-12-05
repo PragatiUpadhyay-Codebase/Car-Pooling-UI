@@ -1,0 +1,108 @@
+/* RiderDashboard General Styles */
+.rider-dashboard {
+  padding: 20px;
+  background: linear-gradient(135deg, #e9eff2, #ffffff);
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Heading Style */
+.rider-dashboard h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.search-bar input {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Ride Cards Container */
+.rides-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+}
+
+/* Ride Card Style */
+.ride-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.ride-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Ride Card Text */
+.ride-card h3 {
+  font-size: 20px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.ride-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Buttons within Ride Card */
+.ride-card button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 15px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.request-button {
+  background: #007bff;
+  color: white;
+}
+
+.cancel-button {
+  background: #ff4d4d;
+  color: white;
+}
+
+/* Button Hover Effects */
+.ride-card button:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .search-bar input {
+    width: 80%;
+  }
+
+  .ride-card {
+    padding: 15px;
+  }
+
+  .ride-card h3 {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,107 @@
+/* General styles for the dashboard */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8; /* Light grey background */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Dashboard container */
+.dashboard-container {
+  width: 90%; /* Take up 90% of the viewport width */
+  max-width: 1200px; /* Restrict the max width */
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Header styles */
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+  color: #4caf50;
+  font-size: 28px;
+}
+
+/* Navigation bar */
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.nav-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #45a049;
+}
+
+/* Section styling */
+.section {
+  margin: 20px 0;
+}
+
+.section h2 {
+  color: #4caf50;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.section-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust layout dynamically */
+  gap: 20px;
+}
+
+/* Card styles */
+.card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Button styling */
+.card button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #45a049;
+}
